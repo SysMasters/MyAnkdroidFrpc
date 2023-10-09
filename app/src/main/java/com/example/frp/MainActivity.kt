@@ -3,15 +3,22 @@ package com.example.frp
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var frpc_ini: EditText
+    private lateinit var btn_start: Button
+    private lateinit var btn_stop: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        frpc_ini = findViewById(R.id.frpc_ini)
+        btn_start = findViewById(R.id.btn_start)
+        btn_stop = findViewById(R.id.btn_stop)
 
         val ini = getPreferences(Context.MODE_PRIVATE).getString(
             "frpc_ini",
