@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         val ini = getPreferences(Context.MODE_PRIVATE).getString(
             "frpc_ini",
             "[common]\n" +
-                    "server_addr = x.x.x.x\n" +
-                    "server_port = 9000\n" +
+                    "server_addr = 116.204.113.142\n" +
+                    "server_port = 7000\n" +
                     "[adb]\r\n" +
                     "type = tcp\n" +
                     "local_ip = 127.0.0.1\n" +
